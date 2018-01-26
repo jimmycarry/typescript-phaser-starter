@@ -9,13 +9,13 @@
 ## Install
 
 ```
-    npm install
+npm install
 ```
 
 
 ## start dev
 ```
-    npm start
+ npm start
 ```
 
 ## Open In Browser
@@ -23,7 +23,7 @@ open browser in localhost:1234
 
 ## deployment
 ```
-    npm run build
+npm run build
 ```
 and then push prod directory to your web server directory
 
