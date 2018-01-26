@@ -1,0 +1,81 @@
+{
+    "extends": ["tslint:latest"],
+    "rules": {
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "encoding": true,
+        "curly": true,
+        "eofline": true,
+        "indent": [true],
+        "jsdoc-format": true,
+        "no-arg": true,
+        "no-consecutive-blank-lines": [true],
+        "no-debugger": true,
+        "no-duplicate-variable": true,
+        "no-trailing-whitespace": true,
+        "no-var-keyword": true,
+        "quotemark": [true,"single"],
+        "no-unused-expression": true,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace",
+            "check-catch"
+        ],
+        "semicolon": [true],
+        "arrow-return-shorthand": true,
+        "no-submodule-imports":false,
+        "no-implicit-dependencies":false,
+        "no-this-assignment":false,
+        "no-console":false,
+        "prefer-for-of":false,
+        "no-string-literal":false,
+        "no-var-requires":false,
+        "member-access":false,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never",
+                "singleline": "never"
+            }
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+         "array-type":false,
+         "member-ordering":false,
+         "ordered-imports":true,
+         "object-literal-sort-keys":false,
+         "interface-name": true,
+         "max-classes-per-file": [true, 5],
+         "variable-name": [
+             true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore",
+            "allow-pascal-case"
+        ],
+        "ban":[
+            true,
+            "eval"
+        ]
+    }
+  }

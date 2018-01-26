@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "allowJs": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "module": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "target": "esnext",
+        "paths": { // define absolute path mappings
+            "@src/*": ["src/*"] // will enable -> import { ... } from '@src/components'
+            // in webpack you need to add -> resolve: { alias: { '@src': PATH_TO_SRC } }
+        },
+        "strictNullChecks": true,
+        "baseUrl": "./"
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
