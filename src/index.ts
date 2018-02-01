@@ -8,10 +8,10 @@ console.log('1');
 class PhaserGame extends Phaser.Game {
     constructor() {
         const docEle = document.documentElement;
-        const width = docEle.clientWidth > config.gameWidth ? config.gameWidth : docEle.clientWidth;
-        const height = docEle.clientHeight > config.gameHeight ? config.gameHeight : docEle.clientHeight;
+        const width = docEle.clientWidth;
+        const height = docEle.clientHeight;
 
-        super(width, height, Phaser.AUTO, 'app', null);
+        super(width * 2, height * 2, Phaser.AUTO, 'app', null);
         this.state.add('Boot', BootState, false);
 
         this.state.start('Boot');
@@ -19,3 +19,9 @@ class PhaserGame extends Phaser.Game {
 }
 
 window['Game'] = new PhaserGame();
+setTimeout(() => {
+    const canvas = document.getElementsByTagName('canvas');
+    if (canvas) {
+        canvas[0].style.transform = 'scale(0.5,0.5) translate(-50%,-50%)';
+    }
+}, 10);

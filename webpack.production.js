@@ -160,6 +160,7 @@ const config = {
         new webpack.optimize.UglifyJsPlugin({
             drop_console: true,
             minimize: true,
+            sourceMap:true,
             output: {
                 comments: false
             }

@@ -10,7 +10,7 @@ export default class BootState extends Phaser.State {
         const text = this.add.text(this.world.centerX,
             this.world.centerY,
             'BootState', {
-                font: '14px Arial',
+                font: '28px Arial',
                 fill: '#ddd',
                 align: 'center'
             });
