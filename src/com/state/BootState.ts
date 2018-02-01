@@ -17,7 +17,7 @@ export default class BootState extends Phaser.State {
         text.anchor.set(0.5, 0.5);
         this.load.image('react', require('@src/assets/head.png'));
     }
-    render() {
+    update() {
         // console.log('nothing to do');
         this.sprite.x += 2;
         if (this.sprite.x > this.world.width) {
